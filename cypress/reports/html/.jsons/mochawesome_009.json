@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:16:10.038Z",
+    "end": "2024-11-14T09:16:15.751Z",
+    "duration": 5713,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81761b40-595f-4c7f-9b9b-184d7b8129b6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dragndrop.cy.js",
+      "file": "cypress\\e2e\\dragndrop.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34ee3c66-864b-4d22-93ff-8200024025e7",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "drag and drop",
+              "fullTitle": "template spec drag and drop",
+              "timedOut": null,
+              "duration": 1898,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html\");\ncy.get('#box6').drag('#box106', {\n  force: true\n});",
+              "err": {},
+              "uuid": "f3e81958-5900-4540-8637-bb01e229a0fe",
+              "parentUUID": "34ee3c66-864b-4d22-93ff-8200024025e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3e81958-5900-4540-8637-bb01e229a0fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1898,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

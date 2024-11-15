@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:13:03.052Z",
+    "end": "2024-11-14T09:13:22.606Z",
+    "duration": 19554,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c16d54cf-c49f-4821-b844-50be041cff53",
+      "title": "",
+      "fullFile": "cypress\\e2e\\LoginWithPom.cy.js",
+      "file": "cypress\\e2e\\LoginWithPom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7712c7b2-40d0-4cdb-aa83-6a2a30f15e1f",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POM TC Login",
+              "fullTitle": "template spec POM TC Login",
+              "timedOut": null,
+              "duration": 13203,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\nconst ln = new _LoginPage.default();\nln.setUserName(\"Admin\");\nln.setPassWord(\"admin123\");\nln.clickSubmit();\nln.verifyLogin();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input[placeholder='Username']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input[placeholder='Username']`, but never found it.\n    at Login.setUserName (webpack://cypress1/./cypress/Pom/LoginPage.js:3:11)\n    at Context.eval (webpack://cypress1/./cypress/e2e/LoginWithPom.cy.js:7:11)",
+                "diff": null
+              },
+              "uuid": "6d3578f3-d37c-49ce-919c-da88f1096f22",
+              "parentUUID": "7712c7b2-40d0-4cdb-aa83-6a2a30f15e1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6d3578f3-d37c-49ce-919c-da88f1096f22"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

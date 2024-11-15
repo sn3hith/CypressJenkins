@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:15:45.465Z",
+    "end": "2024-11-14T09:16:06.867Z",
+    "duration": 21402,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c114201-6b66-40fb-b556-e0c6c10dc5ef",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertions.cy.js",
+      "file": "cypress\\e2e\\assertions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cdc70857-7adf-4236-862e-ecb5bd31bec4",
+          "title": "backup",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checking assertions",
+              "fullTitle": "backup checking assertions",
+              "timedOut": null,
+              "duration": 14007,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\n//   cy.url().should('include','orangehrmlive.com')\n//   cy.url().should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')\n//   cy.url().should('contain','orangehrm')\n//   cy.url().should('include','orangehrmlive.com')\n//           .should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')\n//           .should('contain','orangehrm')\n// cy.url().should('include','orangehrmlive.com')\n//       .and('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')\n//       .and('contain','orangehrm')\n//       .and('not.contain','orangehrm1')\n//       .and('not.include','orangehrmlive1.com')\n//       .and('not.eq','https://opensource-demo1.orangehrmlive.com/web/index.php/auth/login')\n//checking title\n// cy.title().should('include','Orange')\n//            .and('eq','OrangeHRM')\n//            .and('contain','HRM')      \n// cy.get('.orangehrm-login-branding > img').should('be.visible')\n//   .and('exist') \n//username add\ncy.get(\"input[placeholder='Username']\").type('Admin1');\ncy.get(\"input[placeholder='Username']\").should('have.value', 'Admin1');\ncy.get(\"input[placeholder='Username']\").clear();\ncy.get(\"input[placeholder='Username']\").type('Admin');\ncy.get(\"input[placeholder='Username']\").should('have.value', 'Admin');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input[placeholder='Username']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input[placeholder='Username']`, but never found it.\n    at Context.eval (webpack://cypress1/./cypress/e2e/assertions.cy.js:25:11)",
+                "diff": null
+              },
+              "uuid": "a697080c-d363-43d7-ae81-653624a45eaa",
+              "parentUUID": "cdc70857-7adf-4236-862e-ecb5bd31bec4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a697080c-d363-43d7-ae81-653624a45eaa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14007,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
